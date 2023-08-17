@@ -1,0 +1,48 @@
+Qué es la interface Set en Java?
+
+-Es una interface disponible en el paquete java.util
+-Extiende la interface Collection
+-Se utiliza para crear un conjunto matemático
+-Utiliza métodos de la interface Collection para impedir la inserción de mismos elementos 
+-Existen dos interfaces que extienden a Set: SortedSet y NavigableSet
+
+Cómo se crean los objetos de tipo Set?
+
+-Como Set es una interface, no se pueden crear objetos de este tipo de manera explícita.
+-Se hace necesario una clase que la implemente, entre ellas están: 
+
+
+    *HashSet: Define el concepto de conjunto a través de una estructura Hash (es la más habitual)
+
+    *LinkedHashSet: Define el concepto de conjunto añadiendo una lista doblemente enlazada en la ecuación, 
+    lo que asegura que los elementos siempre se recorren de la misma forma.
+
+    *TreeSet: Define el concepto de conjunto a través de una estructura de Árbol . 
+    Este conjunto se utiliza en casos en los cuales se necesita un orden especifico de los elementos.
+
+Se puede crear un objeto de tipo Set de la siguiente manera: 
+
+Set<Obj> set = new HashSet<Obj> (); Lo que se hace es crear un objeto de tipo HashSet y asignarlo a una variable de tipo Set.
+
+Algunas operaciones de la interface: 
+
+- add(element): se utiliza para adicionar un elemento específico al conjunto. 
+Lo hace siempre y cuando dicho elemento no este presente en el conjunto.
+- addAll(collection): adiciona todo los elementos de la colección al conjunto existente si no están presentes.
+- clear(): quita todos los elementos del conjunto sin eliminar el conjunto
+- contains(element): verifica si un elemento se encuentra presente o no en el conjunto
+- containsAll(collection): verifica si el conjunto contiene todos los elementos presentes en la colección
+- hashCode(): obtiene el hashCode para la instancia del conjunto
+- isEmpty(): verifica si el conjunto está vacío o no
+- iterator(): devuelve un iterador sobre los elementos del conjunto
+- remove(element): remueve un elemento del conjunto
+- removeAll(collection): remueve todos los elementos de la colección del conjunto
+- retainAll(collection): remueve todos los elementos del conjunto que no están presentes en la colección
+- size(): devuelve el número de elementos del conjunto
+- toArray(): devuelve un array de objetos que contiene todos los elementos del conjunto
+- toArray(array): devuelve un array de objetos que contiene todos los elementos del conjunto y los almacena en el array especificado
+
+
+
+
+
