@@ -22,19 +22,17 @@ public class DoubleLinkedList<T extends Comparable<T>> {
     }
 
     public String delete(T goal){
+        if (this.head == null){
+            return "The list is empty";
+        } else 
         return delete(goal, this.head);
     }
 
     // método recursivo
     private String delete(T goal, Node<T> current){
         String str;
-
-        // Caso base: La lista esta vacia
-        if(head == null){
-            str = "lis is empty";
-        }
         // Caso Base: El elemento no existe
-        else if(current == null){
+        if(current == null){
             str = "This element does not exist";
         }
         // Caso base: estamos en el nodo a eliminar
@@ -63,7 +61,7 @@ public class DoubleLinkedList<T extends Comparable<T>> {
                 current.setNext(null);
                 current.setPrevious(null);
             }
-            str = "The user has been deleted";
+            str = "The element has been deleted";
         }
         // Caso recursivo
         else {
