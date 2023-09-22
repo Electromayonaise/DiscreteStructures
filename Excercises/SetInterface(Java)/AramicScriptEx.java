@@ -1,5 +1,5 @@
-    import java.util.TreeSet;
-    import java.util.Scanner;
+import java.util.TreeSet;
+import java.util.Scanner;
 
 public class AramicScriptEx {
 
