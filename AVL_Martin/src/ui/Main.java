@@ -25,7 +25,7 @@ public class Main {
                     System.out.println("Enter the key of the node you want to add");
                     int key = main.sc.nextInt();
                     main.avl.add(key);
-                    System.out.printf("The node with the key %d has been added\n", key);
+                    System.out.println("Current state of the tree:");
                     System.out.println("The balance factor of the tree is: " + main.avl.getBalanceFactorofRoot());
                     System.out.println(avl.getTreeStructure());
                     break;
@@ -33,7 +33,7 @@ public class Main {
                     System.out.println("Enter the key of the node you want to delete");
                     int key2 = main.sc.nextInt();
                     main.avl.delete(key2);
-                    System.out.printf("The node with the key %d has been deleted\n", key2);
+                     System.out.println("Current state of the tree:");
                     System.out.println("The balance factor of the tree is: " + main.avl.getBalanceFactorofRoot());
                     System.out.println(avl.getTreeStructure());
                     break;
